@@ -49,7 +49,7 @@ class LM():
 
 
 
-    def prob(self,bigram):#bigrams is a tuple of (the,asbestos)    p(<s> no) = c(<s> no)/c(<s>)
+    def prob(self,bigram):#bigram is a tuple of (the,asbestos)    p(<s> no) = c(<s> no)/c(<s>)
         probs = self.bigrams[bigram[0]][bigram[1]]/(self.bigrams[bigram[0]]['internal_count'])
         return probs
 
